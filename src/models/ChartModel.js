@@ -40,6 +40,16 @@ export default class ChartModel {
         return Object.values(this.byDevice).reduce((a, b) => a + b, 0);
     }
 
+    getPercentageByDevice() {
+        const percentageByDevice =  {};
+        const total = this.getTotalAmount();
+        Object.keys(this.byDevice).forEach(device => {
+            percentageByDevice[device] = ( 100 / total ) * this.byDevice[device];
+        });
+
+        return percentageByDevice;
+    }
+
     getColors() {
         return COLORS[this.type];
     }

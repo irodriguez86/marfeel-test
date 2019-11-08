@@ -9,7 +9,7 @@ body {
     width: 55em;
 }
 
-.pie-chart{
+.pie-chart {
     margin-left: 2em;
     text-align: center;
     margin-right: 2em;
@@ -25,54 +25,53 @@ body {
     line-height: 1.8em;
 }
 
-.pie-chart text.chart-type{
+.pie-chart text.chart-type {
     transform: translate(50%, 40%);
     font-weight: bold;
     font-size: .9em;
 }
 
-.pie-chart text.chart-total-amount{
+.pie-chart text.chart-total-amount {
     transform: translate(50%, 55%);
     font-size: 1.3em;
     font-weight: bold;
 }
 
-.legend{
+.legend {
     height: 3em;
     display: grid;
-
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
 
-.legend-column{
+.legend-column {
     text-overflow: ellipsis;
     font-size: .8em;
     font-weight: bold;
 }
 
-.legend-column.smartphone{
+.legend-column.smartphone {
     margin-left: auto;
 }
 
-.tablet{
+.tablet {
     text-align: left;
 }
 
-.smartphone{
+.smartphone {
     text-align: right;
 }
 
-.smartphone.title{
+.smartphone.title {
     grid-column: 2;
 }
 
-.percentage{
+.percentage {
     margin-right: 1em;
     color: #888888;
 }
 
-.amount{
+.amount {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

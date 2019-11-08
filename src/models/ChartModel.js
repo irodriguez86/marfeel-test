@@ -32,6 +32,14 @@ export default class ChartModel {
         return this.byDevice;
     }
 
+    /**
+     * Get chart info by month
+     * @returns {*}
+     */
+    getDataByMonth() {
+        return this.byMonth;
+    }
+
     getDataSymbol() {
         return this.symbol;
     }

@@ -18,10 +18,11 @@ export default class Chart {
 
         this._drawDoughnut();
         this._drawLegend();
+        this._drawLineChart();
     }
 
     /**
-     *
+     * Draw the doughnut chart
      * @returns {Chart}
      */
     _drawDoughnut() {
@@ -59,6 +60,10 @@ export default class Chart {
         this._addTotalValueText();
     }
 
+    /**
+     * Add text with the type of the chart
+     * @private
+     */
     _addChartTypeText() {
         d3.select("#" + this.chartType).select("svg").append("text")
             .text(this.chartType.toUpperCase())
@@ -66,6 +71,10 @@ export default class Chart {
             .attr("fill", CHART_TYPE_TEXT_COLOR);
     }
 
+    /**
+     * Add the total amount inside the chart
+     * @private
+     */
     _addTotalValueText() {
         const totalAmount = this.chartModel.getTotalAmount();
         const symbol = this.chartModel.getDataSymbol();
@@ -117,4 +126,13 @@ export default class Chart {
                 .text(dataByDevice[device].toLocaleString() + symbol);
         });
     }
+
+    /**
+     * TODO: draw the line chart inside the doughnut
+     * @private
+     */
+    _drawLineChart() {
+
+    }
+
 }
